@@ -1,0 +1,47 @@
+### How to run
+
+#### 1. main test
+
+```bash
+sudo make uthread-sync-demo
+sudo ./uthread-sync-demo <param1> <param2>
+```
+
+#### 2. lock vs spinlock (performance test)
+
+```bash
+sudo make lock-vs-spinlock
+./lock-vs-spinlock <thread_num>
+```
+
+#### 3. sync vs async IO (performance test)
+
+```bash
+sudo make sync-vs-async
+sudo ./sync-vs-async <io_thread_num> <io_rw_len> <comp_thread_num> <comp_work_load>
+```
+
+#### 4. priority inversion
+
+```bash
+sudo make priority-inversion
+./priority-inversion
+```
+
+#### 5. test zoo (functional test: lock & condvar)
+
+```bash
+sudo make test-zoo
+./test-zoo <animal_num>
+```
+
+#### 6. test Async IO (functional test: async_io)
+
+```bash
+sudo make test-async-io
+sudo ./test-async-io
+```
+
+### Performance
+
+Performance test results and test details are included in the report.pdf.
